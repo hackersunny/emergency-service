@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./style.css">
+    <title>Emergency Hotline</title>
+</head>
+<body>
+  <!-- Navbar Section -->
+
+   <header class="mt-3 px-4 mb-2">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 sm:mb-0">
+                <img src="./assets/logo.png" alt="Logo" class="w-12 h-12">
+                <h1 class="text-xl sm:text-2xl text-[#006747] font-extrabold ml-2">Emergency <br>Service</h1>
+            </div>
+            <div class="flex items-center gap-4 sm:gap-8">
+                <div class="flex items-center rounded-2xl bg-[#41ff6b1a]">
+                    <p class="text-base sm:text-lg font-bold">0</p>
+                    <img src="./assets/heart.png" alt="Heart" class="ml-8 mx-auto w-8 h-8">
+                </div>
+                <div class="flex items-center rounded-2xl bg-[#41ff6b1a]">
+                    <p class="text-base sm:text-lg font-bold">100</p>
+                    <img src="./assets/coin.png" alt="Coin" class="ml-8 mx-auto w-8 h-8">
+                </div>
+            <button class="btn btn-success text-white sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base">2 <span>Copy</span></button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+<main>
+    <div class="h-[240px] bg-gradient-to-r from-[#006747] to-[#013223] flex items-center justify-center flex-col">
+        <img src="./assets/logo.png" alt="Logo" class="w-12 h-12 mx-auto mb-2 sm:w-20 sm:h-20">
+        <h1 class="Hero-heading mt-2 sm:text-3xl font-bold">Emergency Service Directory</h1>
+        <p class="Hero-pragraph mt-2 sm:text-sm px-4">Government Emergency Services at Your Fingertip &#45; A Project by Government of the People&#39;s Republic of Bangladesh</p>
+    </div>
+    </main>
+
+    <!-- Main Section -->
+
+  <div class="mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-12 shadow-xl p-2">
+    <!-- Left Side: 9-Column Grid for Service Cards -->
+    <div class="col-span-1 md:col-span-9">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+        <!-- National Emergency Number -->
+        <div class="card flex flex-col justify-between p-4">
+          <div class="emergency-section flex justify-between px-2">
+            <img src="./assets/emergency.png" alt="National Emergency Service Icon" class="w-4 h-4 mb-2">
+            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-lg font-semibold">National Emergency Number</h3>
+          <p class="text-gray-500">National Emergency</p>
+          <p class="text-xl font-bold mt-2">999</p>
+          <span class="badge text-sm border-gray-400 mt-2">All</span>
+          <div class="flex justify-between gap-3 py-3">
+            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <!-- Police Helpline Number -->
+
+        <div class="card flex flex-col justify-between p-4">
+          <div class="police-section flex justify-between px-2">
+            <img src="./assets/police.png" alt="Police Helpline Number Icon" class="w-4 h-4 mb-2">
+            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Police Helpline Number</h3>
+          <p class="text-gray-500">Police</p>
+          <p class="text-xl font-bold mt-2">999</p>
+          <span class="badge text-sm border-gray-400 mt-2">Police</span>
+          <div class="flex justify-between gap-3 py-3">
+            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <!-- Fire Service Number -->
+
+        <div class="card flex flex-col justify-between p-4">
+          <div class="fire-service-section flex justify-between px-2">
+            <img src="./assets/fire-service.png" alt="Fire Service Icon" class="w-4 h-4 mb-2">
+            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Fire Service Number</h3>
+          <p class="text-gray-500">Fire Service</p>
+          <p class="text-xl font-bold mt-2">999</p>
+          <span class="badge text-sm border-gray-400 mt-2">Fire</span>
+          <div class="flex justify-between gap-3 py-3">
+            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <!-- Ambulance Service Number -->
+
+        <div class="card flex flex-col justify-between p-4">
+          <div class="ambulance-service-section flex justify-between px-2">
+            <img src="./assets/ambulance.png" alt="Ambulance Service Icon" class="w-4 h-4 mb-2">
+            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Ambulance Service Number</h3>
+          <p class="text-gray-500">Ambulance Service</p>
+          <p class="text-xl font-bold mt-2">1994-999999</p>
+          <span class="badge text-sm border-gray-400 mt-2">Health</span>
+          <div class="flex justify-between gap-3 py-3">
+            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+
+
+        <div class="card flex flex-col justify-between p-4">
+          <div class="women-child-section flex justify-between px-2">
+            <img src="./assets/emergency.png" alt="Women & Child Helpline Icon" class="w-4 h-4 mb-2">
+            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Women & Child Helpline</h3>
+          <p class="text-gray-500">Women & Child Helpline</p>
+          <p class="text-xl font-bold mt-2">109</p>
+          <span class="badge text-sm border-gray-400 mt-2">Help</span>
+          <div class="flex justify-between gap-3 py-3">
+            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <!-- Anti-Corruption Helpline -->
+
+        <div class="card flex flex-col justify-between p-4">
+          <div class="anti-corruption-section flex justify-between px-2">
+            <img src="./assets/emergency.png" alt="Anti-Corruption Helpline Icon" class="w-4 h-4 mb-2">
+            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Anti-Corruption Helpline</h3>
+          <p class="text-gray-500">Anti-Corruption Helpline</p>
+          <p class="text-xl font-bold mt-2">106</p>
+          <span class="badge text-sm border-gray-400 mt-2">Govt.</span>
+          <div class="flex justify-between gap-3 py-3">
+            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+
+        <!-- Electricity Helpline -->
+
+        <div class="card flex flex-col justify-between p-4">
+          <div class="electricity-helpline-section flex justify-between px-2">
+            <img src="./assets/emergency.png" alt="Electricity Helpline Icon" class="w-4 h-4 mb-2">
+            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Electricity Helpline</h3>
+          <p class="text-gray-500">Electricity Outage</p>
+          <p class="text-xl font-bold mt-2">16216</p>
+          <span class="badge text-sm border-gray-400 mt-2">Electricity</span>
+          <div class="flex justify-between gap-3 py-3">
+            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <!-- Brac Helpline -->
+
+        <div class="card flex flex-col justify-between p-4">
+          <div class="brac-helpline-section flex justify-between px-2">
+            <img src="./assets/emergency.png" alt="Brac Helpline Icon" class="w-4 h-4 mb-2">
+            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Brac Helpline</h3>
+          <p class="text-gray-500">Brac</p>
+          <p class="text-xl font-bold mt-2">16445</p>
+          <span class="badge text-sm border-gray-400 mt-2">NGO</span>
+          <div class="flex justify-between gap-3 py-3">
+            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <!-- Bangladesh Railway Helpline -->
+
+        <div class="card flex flex-col justify-between p-4">
+          <div class="bangladesh-railway-helpline-section flex justify-between px-2">
+            <img src="./assets/emergency.png" alt="Bangladesh Railway Helpline Icon" class="w-4 h-4 mb-2">
+            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Bangladesh Railway Helpline</h3>
+          <p class="text-gray-500">Bangladesh Railway</p>
+          <p class="text-xl font-bold mt-2">163</p>
+          <span class="badge text-sm border-gray-400 mt-2">Travel</span>
+          <div class="flex justify-between gap-3 py-3">
+            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+       </div>
+    </div>
+    <!-- Right Side: 3-Column Grid for Call History -->
+    <div class="col-span-1 md:col-span-3">
+      <div class="card flex flex-col h-full p-4">
+        <div class="flex justify-between items-center">
+          <h3 class="text-lg font-semibold"><i class="fa-regular fa-clock pr-2"></i>Call History</h3>
+          <button class="bg-green-500 text-white px-4 py-2 rounded-md" aria-label="Clear call history">Clear</button>
+        </div>
+        <ul class="space-y-2 overflow-y-auto py-3" style="max-height: 400px;">
+          <li><span>Fire Service Number 999</span><span>11:36:58 AM</span></li>
+          <li><span>Ambulance Service 1994-999999</span><span>11:36:58 AM</span></li>
+          <li><span>Anti-Corruption Helpline 106</span><span>11:36:58 AM</span></li>
+          <!-- Add more accurate entries -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
