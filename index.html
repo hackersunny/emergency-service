@@ -21,7 +21,7 @@
             </div>
             <div class="flex items-center gap-4 sm:gap-8">
                 <div class="flex items-center rounded-2xl bg-[#41ff6b1a]">
-                    <p class="text-base sm:text-lg font-bold">0</p>
+                    <span class="sm:text-lg font-bold" id="counter">0</span>
                     <img src="./assets/heart.png" alt="Heart" class="ml-8 mx-auto w-8 h-8">
                 </div>
                 <div class="flex items-center rounded-2xl bg-[#41ff6b1a]">
@@ -53,14 +53,14 @@
         <div class="card flex flex-col justify-between p-4">
           <div class="emergency-section flex justify-between px-2">
             <img src="./assets/emergency.png" alt="National Emergency Service Icon" class="w-4 h-4 mb-2">
-            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart w-4 h-4 cursor-pointer" aria-label="Like this service for favourite"></i>
           </div>
           <h3 class="text-lg font-semibold">National Emergency Number</h3>
           <p class="text-gray-500">National Emergency</p>
           <p class="text-xl font-bold mt-2">999</p>
           <span class="badge text-sm border-gray-400 mt-2">All</span>
           <div class="flex justify-between gap-3 py-3">
-            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="button-copy w-1/2 border border-gray-400" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
             <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
@@ -70,14 +70,14 @@
         <div class="card flex flex-col justify-between p-4">
           <div class="police-section flex justify-between px-2">
             <img src="./assets/police.png" alt="Police Helpline Number Icon" class="w-4 h-4 mb-2">
-            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart w-4 h-4 cursor-pointer"></i>
           </div>
           <h3 class="text-lg font-semibold">Police Helpline Number</h3>
           <p class="text-gray-500">Police</p>
           <p class="text-xl font-bold mt-2">999</p>
           <span class="badge text-sm border-gray-400 mt-2">Police</span>
           <div class="flex justify-between gap-3 py-3">
-            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="button-copy w-1/2 border border-gray-400" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
             <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
@@ -87,14 +87,14 @@
         <div class="card flex flex-col justify-between p-4">
           <div class="fire-service-section flex justify-between px-2">
             <img src="./assets/fire-service.png" alt="Fire Service Icon" class="w-4 h-4 mb-2">
-            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart w-4 h-4 cursor-pointer"></i>
           </div>
           <h3 class="text-lg font-semibold">Fire Service Number</h3>
           <p class="text-gray-500">Fire Service</p>
           <p class="text-xl font-bold mt-2">999</p>
           <span class="badge text-sm border-gray-400 mt-2">Fire</span>
           <div class="flex justify-between gap-3 py-3">
-            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="button-copy w-1/2 border border-gray-400" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
             <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
@@ -104,14 +104,14 @@
         <div class="card flex flex-col justify-between p-4">
           <div class="ambulance-service-section flex justify-between px-2">
             <img src="./assets/ambulance.png" alt="Ambulance Service Icon" class="w-4 h-4 mb-2">
-            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart w-4 h-4 cursor-pointer"></i>
           </div>
           <h3 class="text-lg font-semibold">Ambulance Service Number</h3>
           <p class="text-gray-500">Ambulance Service</p>
           <p class="text-xl font-bold mt-2">1994-999999</p>
           <span class="badge text-sm border-gray-400 mt-2">Health</span>
           <div class="flex justify-between gap-3 py-3">
-            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="button-copy w-1/2 border border-gray-400" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
             <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
@@ -121,14 +121,14 @@
         <div class="card flex flex-col justify-between p-4">
           <div class="women-child-section flex justify-between px-2">
             <img src="./assets/emergency.png" alt="Women & Child Helpline Icon" class="w-4 h-4 mb-2">
-            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart w-4 h-4 cursor-pointer"></i>
           </div>
           <h3 class="text-lg font-semibold">Women & Child Helpline</h3>
           <p class="text-gray-500">Women & Child Helpline</p>
           <p class="text-xl font-bold mt-2">109</p>
           <span class="badge text-sm border-gray-400 mt-2">Help</span>
           <div class="flex justify-between gap-3 py-3">
-            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="button-copy w-1/2 border border-gray-400" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
             <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
@@ -138,14 +138,14 @@
         <div class="card flex flex-col justify-between p-4">
           <div class="anti-corruption-section flex justify-between px-2">
             <img src="./assets/emergency.png" alt="Anti-Corruption Helpline Icon" class="w-4 h-4 mb-2">
-            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart w-4 h-4 cursor-pointer"></i>
           </div>
           <h3 class="text-lg font-semibold">Anti-Corruption Helpline</h3>
           <p class="text-gray-500">Anti-Corruption Helpline</p>
           <p class="text-xl font-bold mt-2">106</p>
           <span class="badge text-sm border-gray-400 mt-2">Govt.</span>
           <div class="flex justify-between gap-3 py-3">
-            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="button-copy w-1/2 border border-gray-400" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
             <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
@@ -156,14 +156,14 @@
         <div class="card flex flex-col justify-between p-4">
           <div class="electricity-helpline-section flex justify-between px-2">
             <img src="./assets/emergency.png" alt="Electricity Helpline Icon" class="w-4 h-4 mb-2">
-            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart w-4 h-4 cursor-pointer"></i>
           </div>
           <h3 class="text-lg font-semibold">Electricity Helpline</h3>
           <p class="text-gray-500">Electricity Outage</p>
           <p class="text-xl font-bold mt-2">16216</p>
           <span class="badge text-sm border-gray-400 mt-2">Electricity</span>
           <div class="flex justify-between gap-3 py-3">
-            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="button-copy w-1/2 border border-gray-400" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
             <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
@@ -173,14 +173,14 @@
         <div class="card flex flex-col justify-between p-4">
           <div class="brac-helpline-section flex justify-between px-2">
             <img src="./assets/emergency.png" alt="Brac Helpline Icon" class="w-4 h-4 mb-2">
-            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart w-4 h-4 cursor-pointer"></i>
           </div>
           <h3 class="text-lg font-semibold">Brac Helpline</h3>
           <p class="text-gray-500">Brac</p>
           <p class="text-xl font-bold mt-2">16445</p>
           <span class="badge text-sm border-gray-400 mt-2">NGO</span>
           <div class="flex justify-between gap-3 py-3">
-            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="button-copy w-1/2 border border-gray-400" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
             <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
@@ -190,14 +190,14 @@
         <div class="card flex flex-col justify-between p-4">
           <div class="bangladesh-railway-helpline-section flex justify-between px-2">
             <img src="./assets/emergency.png" alt="Bangladesh Railway Helpline Icon" class="w-4 h-4 mb-2">
-            <i class="fa-regular fa-heart w-4 h-4" aria-hidden="true"></i>
+            <i class="fa-regular fa-heart w-4 h-4 cursor-pointer"></i>
           </div>
           <h3 class="text-lg font-semibold">Bangladesh Railway Helpline</h3>
           <p class="text-gray-500">Bangladesh Railway</p>
           <p class="text-xl font-bold mt-2">163</p>
           <span class="badge text-sm border-gray-400 mt-2">Travel</span>
           <div class="flex justify-between gap-3 py-3">
-            <button class="button-copy w-1/2 border border-gray-400" onclick="navigator.clipboard.writeText('999', 'Bangladesh Railway')" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="button-copy w-1/2 border border-gray-400" aria-label="Copy phone number"><i class="fa-regular fa-copy"></i> Copy</button>
             <button class="bg-green-500 text-white w-1/2 ml-2 sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base" aria-label="Call phone number"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
