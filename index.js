@@ -1,19 +1,43 @@
 // --- Favourite Counter --- 
 document.addEventListener("DOMContentLoaded", () => {
-  const counterElement = document.getElementById("counter");
+  const counterEl = document.getElementById("counter");
   let count = 0;
 
- const hearts = document.querySelectorAll(".fa-heart");
-
+  // --- Favourites (hearts) ---
+  const hearts = document.querySelectorAll(".fa-heart");
   hearts.forEach(heart => {
     heart.addEventListener("click", () => {
       count++;
-      counterElement.textContent = count;
+      counterEl.textContent = count;
+
+      // Optional toggle style
       heart.classList.toggle("fa-regular");
       heart.classList.toggle("fa-solid");
-      heart.classList.toggle("text-red-500"); 
+      heart.classList.toggle("text-red-500");
     });
   });
+
+  // --- Copy Buttons ---
+  const copyButtons = document.querySelectorAll(".card .button-copy");
+  copyButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".card");
+      const serviceNumber = card.querySelector("p.font-bold").textContent.trim();
+      const serviceName = card.querySelector("h3").textContent.trim();
+
+      navigator.clipboard.writeText(serviceNumber).then(() => {
+        // Increment the SAME counter
+        count++;
+        counterEl.textContent = count;
+
+        alert(`Copied ${serviceName} number: ${serviceNumber}`);
+      }).catch(() => {
+        alert("Failed to copy number. Please try again.");
+      });
+    });
+  });
+ 
+
 
 
 
@@ -47,10 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add to call history
       const li = document.createElement("li");
       const time = new Date().toLocaleTimeString();
-      li.innerHTML = `<span>${serviceName} ${serviceNumber}</span><span>${time}</span>`;
+      li.innerHTML = `<span>${serviceName} ${serviceNumber}</span><br><span>${time}</span>`;
       callHistory.prepend(li); // newest first
     });
   });
+
 
  // --- Clear Call History ---
   const clearBtn = document.querySelector(
@@ -61,7 +86,5 @@ document.addEventListener("DOMContentLoaded", () => {
     callHistory.innerHTML = ""; // remove all <li>
     alert("Call history cleared!");
   });
-
-  });
-
+ });
  
