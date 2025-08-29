@@ -12,3 +12,12 @@
     color: white;
     font-weight:400;
 }
+
+
+/* Media Query */
+
+@media (max-width: 640px) {
+  .break {
+    display: none;
+  }
+}

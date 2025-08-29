@@ -17,15 +17,15 @@
         <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
             <div class="flex items-center mb-4 sm:mb-0">
                 <img src="./assets/logo.png" alt="Logo" class="w-12 h-12">
-                <h1 class="text-xl sm:text-2xl text-[#006747] font-extrabold ml-2">Emergency <br>Service</h1>
+                <h1 class="text-xl sm:text-2xl text-[#006747] font-extrabold ml-2">Emergency <br class="break">Service</h1>
             </div>
             <div class="flex items-center gap-4 sm:gap-8">
                 <div class="flex items-center rounded-2xl bg-[#41ff6b1a]">
-                    <span class="sm:text-lg font-bold" id="counter">0</span>
+                    <p id="counter" class="text-base sm:text-lg font-bold">0</p>
                     <img src="./assets/heart.png" alt="Heart" class="ml-8 mx-auto w-8 h-8">
                 </div>
                 <div class="flex items-center rounded-2xl bg-[#41ff6b1a]">
-                    <p class="text-base sm:text-lg font-bold">100</p>
+                    <p class="text-base sm:text-lg font-bold" id="coinCount">100</p>
                     <img src="./assets/coin.png" alt="Coin" class="ml-8 mx-auto w-8 h-8">
                 </div>
             <button class="btn btn-success text-white sm:px-4 sm:py-2 rounded-md font-bold text-sm sm:text-base">2 <span>Copy</span></button>
@@ -36,8 +36,8 @@
 <main>
     <div class="h-[240px] bg-gradient-to-r from-[#006747] to-[#013223] flex items-center justify-center flex-col">
         <img src="./assets/logo.png" alt="Logo" class="w-12 h-12 mx-auto mb-2 sm:w-20 sm:h-20">
-        <h1 class="Hero-heading mt-2 sm:text-3xl font-bold">Emergency Service Directory</h1>
-        <p class="Hero-pragraph mt-2 sm:text-sm px-4">Government Emergency Services at Your Fingertip &#45; A Project by Government of the People&#39;s Republic of Bangladesh</p>
+        <h1 class="Hero-heading mt-2 sm:text-xl font-bold">Emergency Service Directory</h1>
+        <p class="Hero-pragraph mt-2 sm:text-sm px-4 text-center">Government Emergency Services at Your Fingertip &#45; A Project by Government of the People&#39;s Republic of Bangladesh</p>
     </div>
     </main>
 
@@ -210,10 +210,10 @@
           <h3 class="text-lg font-semibold"><i class="fa-regular fa-clock pr-2"></i>Call History</h3>
           <button class="bg-green-500 text-white py-2 px-3 rounded-md" aria-label="Clear call history">Clear</button>
         </div>
-        <ul class="space-y-2 overflow-y-auto py-3" style="max-height: 400px;">
-          <li><span>Fire Service Number 999</span><span>11:36:58 AM</span></li>
-          <li><span>Ambulance Service 1994-999999</span><span>11:36:58 AM</span></li>
-          <li><span>Anti-Corruption Helpline 106</span><span>11:36:58 AM</span></li>
+        <ul class="global-call-history space-y-2 overflow-y-auto py-3" style="max-height: 700px;">
+          <li><span>Fire Service Number 999</span>&nbsp;&nbsp;<span>11:36:58 AM</span></li>
+          <li><span>Ambulance Service 1994-999999</span>&nbsp;&nbsp;<span>11:36:58 AM</span></li>
+          <li><span>Anti-Corruption Helpline 106</span>&nbsp;&nbsp;<span>11:36:58 AM</span></li>
           <!-- Add more accurate entries -->
         </ul>
       </div>
